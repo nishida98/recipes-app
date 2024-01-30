@@ -6,5 +6,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'recipes-app';
+
+  destination: string
+
+  setDestination(destination: string) {
+    this.destination = destination
+  }
+
 }
