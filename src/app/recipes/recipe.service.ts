@@ -19,7 +19,7 @@ export class RecipeService{
                 new Ingredient("I2", 21)
             ]),
         new Recipe(
-            "Test Recipe", 
+            "Beef Wellington", 
             "Test Description", 
             "https://grillmomma.com/wp-content/uploads/2020/12/IMG_1986-3-scaled-e1609301042548.jpg",
             [
@@ -34,6 +34,10 @@ export class RecipeService{
 
     addIngredientsToShoppingList(ingredients: Ingredient[]) {
         this.shoppingService.addIngredients(ingredients)
+    }
+
+    getRecipeById(id: number) {
+        return this.recipes[id]
     }
 
 }
